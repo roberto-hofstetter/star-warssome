@@ -1,34 +1,50 @@
+@import '../../assets/bootstrap-sass/_variables.scss'
+
 ul
     list-style: none
 
     li        
-        padding: 10px        
+        padding: 10px     
+        display: inline-grid           
 
         a
             background-color: white
-            padding: 0px
-            min-height: 200px
+            padding: 0px 
+            min-height: 450px           
             text-align: center
             padding-bottom: 10px
             font-family: 'Roboto', sans-serif 
+            display: block
+
+            @media(max-width: 1200px)
+                min-height: 550px           
+
+            @media(max-width: 990px)
+                min-height: auto           
 
             &:hover
                 span
-                    color: #ab47bc
+                    color: $color-base
                     font-weight: bold
+                    text-decoration: underline
                 .director                    
-                    color: #ab47bc !important
+                    color: $color-base !important
                     font-weight: bold
+                    text-decoration: underline
+
+                .description, h3
+                    text-decoration: underline
+                        
 
             h3, span                
                 padding: 0
                 font-family: 'Roboto', sans-serif
             
             h3
-                background-color: #ab47bc
+                background-color: $color-base
                 margin: 0
-                padding: 20px 0                
-                color: white
+                padding: 20px               
+                color: $color-star-wars
             
             .description
                 padding: 20px            

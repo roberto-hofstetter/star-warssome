@@ -9,19 +9,19 @@ import { FilmService } from '../film.service'
   <ul class="col-md-12">  
     <li *ngFor="let film of films" class="col-md-4">    
       <a [routerLink]="['/films', film.id]" class="col-md-12">        
-        <h3 class="col-md-12">{{film.title}}</h3>
+        <h3 class="col-md-12">Star Wars: Episode {{film.episode_id}} - {{film.title}} ({{film.release_date | date: 'yyyy'}})</h3>
         <div class="col-md-12 description">            
           {{film.opening_crawl}}
         </div>
-        <div class="col-md-12 card-footer">            
-          <span class="col-md-6">
-            <span class="col-md-12">Data de lançamento</span> 
+        <div class="col-md-12 col-sm-12 col-xs-12">            
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <strong class="col-md-12">Release Date</strong> 
             <span class="col-md-12">{{film.release_date | date: 'dd/MM/yyyy'}}</span>
-          </span>
-          <span class="col-md-6">
-              <span class="col-md-12">Diretor</span> 
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12">
+              <strong class="col-md-12">Director</strong> 
               <span class="col-md-12">{{film.director}}</span>
-            </span>
+            </div>
         </div>        
       </a>
     </li>

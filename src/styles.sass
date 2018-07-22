@@ -5,24 +5,33 @@
 body
     background-color: #f2f2f2
 
-    .navbar
-        background-color: #ab47bc
+    .navbar, .footer
+        background-color: $color-base
         margin: 0
         padding: 0
         
         a
-            color: white
+            color: $color-star-wars
 
-    header
-        background-color: #ba68c8
-        background-image: url('//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/icon-seamless.png?16159681896060662723')
+            &:hover
+                text-decoration: underline
+
+    .footer
+        font-size: 20px
+        padding: 20px
+        text-align: center
+
+    header        
+        background-image: url('/assets/images/milky-way-starry-sky-night-sky-star-957061.jpeg')
 
         h1
-            padding: 40px 0
-            color: white
+            padding: 100px 0
+            color: $color-star-wars
             text-align: center
             margin-top: 0
             font-weight: bold
             text-transform: uppercase
             font-family: 'Roboto', sans-serif
 
+    .container-site
+        min-height: 800px

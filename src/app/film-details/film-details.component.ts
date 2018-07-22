@@ -11,11 +11,10 @@ import { iif } from 'rxjs';
 {{film.characters}}
   
     <div class="col-md-12 header">  
-      <h1 class="cold-md-12">Star Wars: {{film.title}} ({{film.release_date | date: 'yyyy'}})</h1>        
-      <span class="col-md-6"><strong>Episodio:</strong> {{film.episode_id}}</span>
-      <span class="col-md-6 release-date"><strong>Data de lançamento:</strong> {{film.release_date | date: 'dd/MM/yyyy'}}</span>      
-      <h2 class="col-md-12"><strong>Diretor:</strong> {{film.director}}</h2>      
-      <span class="col-md-12"><strong>Produtores:</strong> {{film.producer}}</span>      
+      <h1 class="col-md-12">Star Wars: Episode {{film.episode_id}} - {{film.title}} ({{film.release_date | date: 'yyyy'}})</h1>              
+      <span class="col-md-6 col-xs-12 release-date"><strong>Release Date:</strong> {{film.release_date | date: 'dd/MM/yyyy'}}</span>      
+      <h2 class="col-md-12"><strong>Director:</strong> {{film.director}}</h2>      
+      <span class="col-md-12"><strong>Producer:</strong> {{film.producer}}</span>      
     </div>    
 
     <div class="col-md-12 description">
@@ -24,7 +23,7 @@ import { iif } from 'rxjs';
 
     <div class="list-group col-md-6">
       <a href="javascript:void(0)" class="list-group-item list-group-item-action active">
-        Personagens
+        Characters
       </a>
       <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
       <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
@@ -33,7 +32,7 @@ import { iif } from 'rxjs';
     </div>
     
     <div class="col-md-12">
-      <button class="btn btn-dark" (click)="gotoFilmsList()">Voltar para a listagem</button>
+      <button class="btn btn-warning" (click)="gotoFilmsList()">Back To List</button>      
     </div>    
   </section>
 
