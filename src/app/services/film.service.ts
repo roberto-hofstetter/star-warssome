@@ -4,7 +4,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 
 import { Observable, of } from 'rxjs'
 
-import { Film } from './film'
+import { Film } from '../interfaces/film'
 
 @Injectable()
 export class FilmService {

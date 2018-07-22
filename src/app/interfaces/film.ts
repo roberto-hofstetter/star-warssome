@@ -1,3 +1,5 @@
+import { Person } from '../interfaces/person'
+
 export interface Film {
     id: number;
     title: string;
@@ -6,7 +8,7 @@ export interface Film {
     director: string;
     producer: string;
     release_date: string;
-    characters: string[];
+    characters: Person[];
     /*planets: string;
     starships: string;
     vehicles: string;

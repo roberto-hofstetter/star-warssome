@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 
 import { FilmsListComponent } from './films-list/films-list.component';
 import { FilmDetailsComponent } from './film-details/film-details.component'
-import { FilmService } from './film.service';
+import { FilmService } from './services/film.service';
 
 @NgModule({
   declarations: [AppComponent, FilmsListComponent, FilmDetailsComponent],
