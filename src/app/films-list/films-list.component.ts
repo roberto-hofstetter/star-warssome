@@ -5,6 +5,9 @@ import { FilmService } from '../film.service'
 @Component({
   selector: 'app-films-list',
   template: `
+  <header>
+      <h1>Star Wars Films List</h1>  
+  </header>
   <section class="container">
   <ul class="col-md-12">  
     <li *ngFor="let film of films" class="col-md-4">    

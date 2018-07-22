@@ -7,9 +7,11 @@ import { iif } from 'rxjs';
 @Component({
   selector: 'app-film-details',
   template: `  
-  <section *ngIf="film" class="film-details container">
-{{film.characters}}
-  
+  <header>
+      <h1>Star Wars Films Details - {{film.title}}</h1>  
+  </header>
+
+  <section *ngIf="film" class="film-details container">  
     <div class="col-md-12 header">  
       <h1 class="col-md-12">Star Wars: Episode {{film.episode_id}} - {{film.title}} ({{film.release_date | date: 'yyyy'}})</h1>              
       <span class="col-md-6 col-xs-12 release-date"><strong>Release Date:</strong> {{film.release_date | date: 'dd/MM/yyyy'}}</span>      
