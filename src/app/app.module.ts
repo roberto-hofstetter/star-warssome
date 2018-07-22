@@ -8,13 +8,9 @@ import { FilmsListComponent } from './films-list/films-list.component';
 import { FilmDetailsComponent } from './film-details/film-details.component'
 import { FilmService } from './film.service';
 
-/*import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { MaterialModule } from './material.module'*/
-
 @NgModule({
   declarations: [AppComponent, FilmsListComponent, FilmDetailsComponent],
-  imports: [BrowserModule, HttpModule, AppRoutingModule, /*BrowserAnimationsModule, FlexLayoutModule, MaterialModule,*/],
+  imports: [BrowserModule, HttpModule, AppRoutingModule],
   providers: [FilmService],
   bootstrap: [AppComponent],
 })

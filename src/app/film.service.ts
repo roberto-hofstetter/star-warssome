@@ -22,14 +22,7 @@ export class FilmService {
   private getHeaders() {
     // get dos headers para servir o tipo json
     let headers = new Headers()
-    
-    headers.append('Accept', 'application/json', );
-    //headers.append('Access-Control-Allow-Origin', '*');
-    //headers.append('Access-Control-Allow-Methods', 'GET,HEAD,OPTIONS,POST,PUT');
-    //headers.append('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type, Accept, Authorization');
-    //headers.append('Access-Control-Allow-Credentials', 'true');
-    //headers.append('Content-Type', 'text/plain charset=UTF-8');
-    
+    headers.append('Accept', 'application/json');
     return headers
   }
   
