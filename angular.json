@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "my-app2": {
+    "star-warssome": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/my-app2",
+            "outputPath": "dist/star-warssome",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -54,18 +54,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "my-app2:build"
+            "browserTarget": "star-warssome:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "my-app2:build:production"
+              "browserTarget": "star-warssome:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "my-app2:build"
+            "browserTarget": "star-warssome:build"
           }
         },
         "test": {
@@ -99,7 +99,7 @@
         }
       }
     },
-    "my-app2-e2e": {
+    "star-warssome-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -107,11 +107,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "my-app2:serve"
+            "devServerTarget": "star-warssome:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "my-app2:serve:production"
+              "devServerTarget": "star-warssome:serve:production"
             }
           }
         },
@@ -127,5 +127,5 @@
       }
     }
   },
-  "defaultProject": "my-app2"
+  "defaultProject": "star-warssome"
 }
