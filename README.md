@@ -4,7 +4,7 @@ Projeto gerado com [Angular CLI](https://github.com/angular/angular-cli) version
 
 ## Development server
 
-Rodar `npm install -g @angular/cli` para instalar o Angular CLI.
+Rodar `npm install -g @angular/cli` para instalar o Angular CLI caso não tenha instalado.
 Rodar `npm install` para instalar os pacotes.
 Rodar `ng s -o` para abrir o site no ambiente de desenvolvimento. ou `ng serve` e Navegar para `http://localhost:4200/`.
 

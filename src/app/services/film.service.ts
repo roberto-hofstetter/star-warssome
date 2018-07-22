@@ -50,8 +50,8 @@ function toFilm(r: any): Film {
     director: r.director,
     producer: r.producer,
     release_date: r.release_date,
-    /*characters: string;
-    planets: string;
+    characters: r.characters,
+    /*planets: string;
     starships: string;
     vehicles: string;
     species: string;*/

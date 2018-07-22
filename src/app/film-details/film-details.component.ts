@@ -20,14 +20,12 @@ export class FilmDetailsComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit() {    
+
     this.sub = this.route.params.subscribe(params => {
       let id = Number.parseInt(params['id'])
-      var teste = this.filmService
+      this.filmService
             .get(id)
-            .subscribe(p => this.film = p);
-
-            console.log(teste[0])
-
+            .subscribe(p => this.film = p);                                            
     })
   }
 
